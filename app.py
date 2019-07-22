@@ -11,9 +11,9 @@ df_describe.insert(0, 'Stat', train.describe().index.to_list())
 
 df_corr = train.corr().copy()
 
-#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-#app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-#server = app.server
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.layout = html.Div([
 
     html.H1('Title'),
