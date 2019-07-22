@@ -4,7 +4,7 @@ import dash_html_components as html
 import dash_table as dt
 import plotly.graph_objs as go
 # Load datasets
-train = pd.read_csv('train.csv', index_col ='PassengerId' )
+train = pd.read_csv('https://github.com/tiagoportelanelo/nelotest/blob/master/test.csv', index_col ='PassengerId' )
 
 df_describe = train.describe().copy()
 df_describe.insert(0, 'Stat', train.describe().index.to_list())
